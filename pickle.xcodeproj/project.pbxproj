@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C05CD5C2B013B3D005BBF9E /* EntryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C05CD5B2B013B3D005BBF9E /* EntryListView.swift */; };
+		5C05CD5F2B01429E005BBF9E /* EntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C05CD5E2B01429E005BBF9E /* EntryRow.swift */; };
+		5C05CD622B0142E5005BBF9E /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C05CD612B0142E5005BBF9E /* Entry.swift */; };
+		5C53AF9C2AFE62210091796D /* pickleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AF9B2AFE62210091796D /* pickleApp.swift */; };
+		5C53AF9E2AFE62210091796D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AF9D2AFE62210091796D /* ContentView.swift */; };
+		5C53AFA02AFE62220091796D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C53AF9F2AFE62220091796D /* Assets.xcassets */; };
+		5C53AFA32AFE62220091796D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C53AFA22AFE62220091796D /* Preview Assets.xcassets */; };
+		5C53AFA52AFE62220091796D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFA42AFE62220091796D /* Persistence.swift */; };
+		5C53AFA82AFE62220091796D /* pickle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFA62AFE62220091796D /* pickle.xcdatamodeld */; };
+		5C53AFB22AFE62220091796D /* pickleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFB12AFE62220091796D /* pickleTests.swift */; };
+		5C53AFBC2AFE62220091796D /* pickleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFBB2AFE62220091796D /* pickleUITests.swift */; };
+		5C53AFBE2AFE62220091796D /* pickleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFBD2AFE62220091796D /* pickleUITestsLaunchTests.swift */; };
+		5C53AFCB2AFE8B720091796D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFCA2AFE8B720091796D /* CameraViewController.swift */; };
+		5C53AFCF2AFEA9480091796D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFCE2AFEA9480091796D /* CameraView.swift */; };
+		5CE593582AFFFDEB001FF9D6 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE593572AFFFDEB001FF9D6 /* HorizonCalendar */; };
+		5CE5935A2AFFFE95001FF9D6 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */; };
+		5CE5935C2B000989001FF9D6 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5935B2B000989001FF9D6 /* CalendarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C53AFAE2AFE62220091796D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C53AF902AFE62210091796D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C53AF972AFE62210091796D;
+			remoteInfo = pickle;
+		};
+		5C53AFB82AFE62220091796D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C53AF902AFE62210091796D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C53AF972AFE62210091796D;
+			remoteInfo = pickle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C05CD5B2B013B3D005BBF9E /* EntryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListView.swift; sourceTree = "<group>"; };
+		5C05CD5E2B01429E005BBF9E /* EntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRow.swift; sourceTree = "<group>"; };
+		5C05CD612B0142E5005BBF9E /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		5C53AF982AFE62210091796D /* pickle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C53AF9B2AFE62210091796D /* pickleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickleApp.swift; sourceTree = "<group>"; };
+		5C53AF9D2AFE62210091796D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C53AF9F2AFE62220091796D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C53AFA22AFE62220091796D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5C53AFA42AFE62220091796D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5C53AFA72AFE62220091796D /* pickle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pickle.xcdatamodel; sourceTree = "<group>"; };
+		5C53AFAD2AFE62220091796D /* pickleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pickleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C53AFB12AFE62220091796D /* pickleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickleTests.swift; sourceTree = "<group>"; };
+		5C53AFB72AFE62220091796D /* pickleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pickleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C53AFBB2AFE62220091796D /* pickleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickleUITests.swift; sourceTree = "<group>"; };
+		5C53AFBD2AFE62220091796D /* pickleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C53AFCA2AFE8B720091796D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5C53AFCE2AFEA9480091796D /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		5CE5935B2B000989001FF9D6 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C53AF952AFE62210091796D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE593582AFFFDEB001FF9D6 /* HorizonCalendar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C53AFAA2AFE62220091796D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C53AFB42AFE62220091796D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C05CD5D2B01428C005BBF9E /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C05CD5E2B01429E005BBF9E /* EntryRow.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		5C05CD602B0142C2005BBF9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C05CD612B0142E5005BBF9E /* Entry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C53AF8F2AFE62210091796D = {
+			isa = PBXGroup;
+			children = (
+				5C53AF9A2AFE62210091796D /* pickle */,
+				5C53AFB02AFE62220091796D /* pickleTests */,
+				5C53AFBA2AFE62220091796D /* pickleUITests */,
+				5C53AF992AFE62210091796D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C53AF992AFE62210091796D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C53AF982AFE62210091796D /* pickle.app */,
+				5C53AFAD2AFE62220091796D /* pickleTests.xctest */,
+				5C53AFB72AFE62220091796D /* pickleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C53AF9A2AFE62210091796D /* pickle */ = {
+			isa = PBXGroup;
+			children = (
+				5C53AF9B2AFE62210091796D /* pickleApp.swift */,
+				5C05CD602B0142C2005BBF9E /* Model */,
+				5C53AFCD2AFE8B900091796D /* ViewController */,
+				5C53AFCC2AFE8B7B0091796D /* View */,
+				5C53AF9F2AFE62220091796D /* Assets.xcassets */,
+				5C53AFA42AFE62220091796D /* Persistence.swift */,
+				5C53AFA62AFE62220091796D /* pickle.xcdatamodeld */,
+				5C53AFA12AFE62220091796D /* Preview Content */,
+			);
+			path = pickle;
+			sourceTree = "<group>";
+		};
+		5C53AFA12AFE62220091796D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5C53AFA22AFE62220091796D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5C53AFB02AFE62220091796D /* pickleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C53AFB12AFE62220091796D /* pickleTests.swift */,
+			);
+			path = pickleTests;
+			sourceTree = "<group>";
+		};
+		5C53AFBA2AFE62220091796D /* pickleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C53AFBB2AFE62220091796D /* pickleUITests.swift */,
+				5C53AFBD2AFE62220091796D /* pickleUITestsLaunchTests.swift */,
+			);
+			path = pickleUITests;
+			sourceTree = "<group>";
+		};
+		5C53AFCC2AFE8B7B0091796D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C05CD5D2B01428C005BBF9E /* Reusable Views */,
+				5C53AFCE2AFEA9480091796D /* CameraView.swift */,
+				5C53AF9D2AFE62210091796D /* ContentView.swift */,
+				5CE5935B2B000989001FF9D6 /* CalendarView.swift */,
+				5C05CD5B2B013B3D005BBF9E /* EntryListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C53AFCD2AFE8B900091796D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */,
+				5C53AFCA2AFE8B720091796D /* CameraViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C53AF972AFE62210091796D /* pickle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C53AFC12AFE62220091796D /* Build configuration list for PBXNativeTarget "pickle" */;
+			buildPhases = (
+				5C53AF942AFE62210091796D /* Sources */,
+				5C53AF952AFE62210091796D /* Frameworks */,
+				5C53AF962AFE62210091796D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pickle;
+			packageProductDependencies = (
+				5CE593572AFFFDEB001FF9D6 /* HorizonCalendar */,
+			);
+			productName = pickle;
+			productReference = 5C53AF982AFE62210091796D /* pickle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C53AFAC2AFE62220091796D /* pickleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C53AFC42AFE62220091796D /* Build configuration list for PBXNativeTarget "pickleTests" */;
+			buildPhases = (
+				5C53AFA92AFE62220091796D /* Sources */,
+				5C53AFAA2AFE62220091796D /* Frameworks */,
+				5C53AFAB2AFE62220091796D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C53AFAF2AFE62220091796D /* PBXTargetDependency */,
+			);
+			name = pickleTests;
+			productName = pickleTests;
+			productReference = 5C53AFAD2AFE62220091796D /* pickleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C53AFB62AFE62220091796D /* pickleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C53AFC72AFE62220091796D /* Build configuration list for PBXNativeTarget "pickleUITests" */;
+			buildPhases = (
+				5C53AFB32AFE62220091796D /* Sources */,
+				5C53AFB42AFE62220091796D /* Frameworks */,
+				5C53AFB52AFE62220091796D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C53AFB92AFE62220091796D /* PBXTargetDependency */,
+			);
+			name = pickleUITests;
+			productName = pickleUITests;
+			productReference = 5C53AFB72AFE62220091796D /* pickleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C53AF902AFE62210091796D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5C53AF972AFE62210091796D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					5C53AFAC2AFE62220091796D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 5C53AF972AFE62210091796D;
+					};
+					5C53AFB62AFE62220091796D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 5C53AF972AFE62210091796D;
+					};
+				};
+			};
+			buildConfigurationList = 5C53AF932AFE62210091796D /* Build configuration list for PBXProject "pickle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C53AF8F2AFE62210091796D;
+			packageReferences = (
+				5CE593562AFFFDEB001FF9D6 /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
+			);
+			productRefGroup = 5C53AF992AFE62210091796D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C53AF972AFE62210091796D /* pickle */,
+				5C53AFAC2AFE62220091796D /* pickleTests */,
+				5C53AFB62AFE62220091796D /* pickleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C53AF962AFE62210091796D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C53AFA32AFE62220091796D /* Preview Assets.xcassets in Resources */,
+				5C53AFA02AFE62220091796D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C53AFAB2AFE62220091796D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C53AFB52AFE62220091796D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C53AF942AFE62210091796D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C53AFA52AFE62220091796D /* Persistence.swift in Sources */,
+				5C53AFCB2AFE8B720091796D /* CameraViewController.swift in Sources */,
+				5CE5935C2B000989001FF9D6 /* CalendarView.swift in Sources */,
+				5C05CD5F2B01429E005BBF9E /* EntryRow.swift in Sources */,
+				5C53AF9E2AFE62210091796D /* ContentView.swift in Sources */,
+				5C53AFCF2AFEA9480091796D /* CameraView.swift in Sources */,
+				5C05CD622B0142E5005BBF9E /* Entry.swift in Sources */,
+				5C05CD5C2B013B3D005BBF9E /* EntryListView.swift in Sources */,
+				5C53AF9C2AFE62210091796D /* pickleApp.swift in Sources */,
+				5C53AFA82AFE62220091796D /* pickle.xcdatamodeld in Sources */,
+				5CE5935A2AFFFE95001FF9D6 /* CalendarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C53AFA92AFE62220091796D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C53AFB22AFE62220091796D /* pickleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C53AFB32AFE62220091796D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C53AFBE2AFE62220091796D /* pickleUITestsLaunchTests.swift in Sources */,
+				5C53AFBC2AFE62220091796D /* pickleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C53AFAF2AFE62220091796D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C53AF972AFE62210091796D /* pickle */;
+			targetProxy = 5C53AFAE2AFE62220091796D /* PBXContainerItemProxy */;
+		};
+		5C53AFB92AFE62220091796D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C53AF972AFE62210091796D /* pickle */;
+			targetProxy = 5C53AFB82AFE62220091796D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5C53AFBF2AFE62220091796D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C53AFC02AFE62220091796D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C53AFC22AFE62220091796D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pickle/Preview Content\"";
+				DEVELOPMENT_TEAM = 73JBJ22DZF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Pickle to use camera? This app only saves data internally.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoto.pickle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C53AFC32AFE62220091796D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pickle/Preview Content\"";
+				DEVELOPMENT_TEAM = 73JBJ22DZF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Pickle to use camera? This app only saves data internally.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoto.pickle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C53AFC52AFE62220091796D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73JBJ22DZF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoto.pickleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pickle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pickle";
+			};
+			name = Debug;
+		};
+		5C53AFC62AFE62220091796D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73JBJ22DZF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoto.pickleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pickle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pickle";
+			};
+			name = Release;
+		};
+		5C53AFC82AFE62220091796D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73JBJ22DZF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoto.pickleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pickle;
+			};
+			name = Debug;
+		};
+		5C53AFC92AFE62220091796D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73JBJ22DZF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoto.pickleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pickle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C53AF932AFE62210091796D /* Build configuration list for PBXProject "pickle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C53AFBF2AFE62220091796D /* Debug */,
+				5C53AFC02AFE62220091796D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C53AFC12AFE62220091796D /* Build configuration list for PBXNativeTarget "pickle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C53AFC22AFE62220091796D /* Debug */,
+				5C53AFC32AFE62220091796D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C53AFC42AFE62220091796D /* Build configuration list for PBXNativeTarget "pickleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C53AFC52AFE62220091796D /* Debug */,
+				5C53AFC62AFE62220091796D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C53AFC72AFE62220091796D /* Build configuration list for PBXNativeTarget "pickleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C53AFC82AFE62220091796D /* Debug */,
+				5C53AFC92AFE62220091796D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CE593562AFFFDEB001FF9D6 /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/HorizonCalendar";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CE593572AFFFDEB001FF9D6 /* HorizonCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CE593562AFFFDEB001FF9D6 /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
+			productName = HorizonCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		5C53AFA62AFE62220091796D /* pickle.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5C53AFA72AFE62220091796D /* pickle.xcdatamodel */,
+			);
+			currentVersion = 5C53AFA72AFE62220091796D /* pickle.xcdatamodel */;
+			path = pickle.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5C53AF902AFE62210091796D /* Project object */;
+}
