@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C05CD5C2B013B3D005BBF9E /* EntryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C05CD5B2B013B3D005BBF9E /* EntryListView.swift */; };
 		5C05CD5F2B01429E005BBF9E /* EntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C05CD5E2B01429E005BBF9E /* EntryRow.swift */; };
-		5C05CD622B0142E5005BBF9E /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C05CD612B0142E5005BBF9E /* Entry.swift */; };
+		5C05CD622B0142E5005BBF9E /* EntryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C05CD612B0142E5005BBF9E /* EntryItem.swift */; };
 		5C53AF9C2AFE62210091796D /* pickleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AF9B2AFE62210091796D /* pickleApp.swift */; };
 		5C53AF9E2AFE62210091796D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AF9D2AFE62210091796D /* ContentView.swift */; };
 		5C53AFA02AFE62220091796D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C53AF9F2AFE62220091796D /* Assets.xcassets */; };
@@ -21,6 +21,8 @@
 		5C53AFBE2AFE62220091796D /* pickleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFBD2AFE62220091796D /* pickleUITestsLaunchTests.swift */; };
 		5C53AFCB2AFE8B720091796D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFCA2AFE8B720091796D /* CameraViewController.swift */; };
 		5C53AFCF2AFEA9480091796D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFCE2AFEA9480091796D /* CameraView.swift */; };
+		5C5B575A2B023CA1008F29F8 /* EntrySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B57592B023CA1008F29F8 /* EntrySummaryView.swift */; };
+		5C5B575C2B027B4A008F29F8 /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B575B2B027B4A008F29F8 /* VideoCardView.swift */; };
 		5CE593582AFFFDEB001FF9D6 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE593572AFFFDEB001FF9D6 /* HorizonCalendar */; };
 		5CE5935A2AFFFE95001FF9D6 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */; };
 		5CE5935C2B000989001FF9D6 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5935B2B000989001FF9D6 /* CalendarView.swift */; };
@@ -46,7 +48,7 @@
 /* Begin PBXFileReference section */
 		5C05CD5B2B013B3D005BBF9E /* EntryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListView.swift; sourceTree = "<group>"; };
 		5C05CD5E2B01429E005BBF9E /* EntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRow.swift; sourceTree = "<group>"; };
-		5C05CD612B0142E5005BBF9E /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		5C05CD612B0142E5005BBF9E /* EntryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryItem.swift; sourceTree = "<group>"; };
 		5C53AF982AFE62210091796D /* pickle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C53AF9B2AFE62210091796D /* pickleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickleApp.swift; sourceTree = "<group>"; };
 		5C53AF9D2AFE62210091796D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		5C53AFBD2AFE62220091796D /* pickleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5C53AFCA2AFE8B720091796D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		5C53AFCE2AFEA9480091796D /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		5C5B57592B023CA1008F29F8 /* EntrySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrySummaryView.swift; sourceTree = "<group>"; };
+		5C5B575B2B027B4A008F29F8 /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
 		5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		5CE5935B2B000989001FF9D6 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				5C05CD5E2B01429E005BBF9E /* EntryRow.swift */,
+				5C5B575B2B027B4A008F29F8 /* VideoCardView.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -102,7 +107,7 @@
 		5C05CD602B0142C2005BBF9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5C05CD612B0142E5005BBF9E /* Entry.swift */,
+				5C05CD612B0142E5005BBF9E /* EntryItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				5C53AF9D2AFE62210091796D /* ContentView.swift */,
 				5CE5935B2B000989001FF9D6 /* CalendarView.swift */,
 				5C05CD5B2B013B3D005BBF9E /* EntryListView.swift */,
+				5C5B57592B023CA1008F29F8 /* EntrySummaryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,13 +331,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C53AFA52AFE62220091796D /* Persistence.swift in Sources */,
+				5C5B575C2B027B4A008F29F8 /* VideoCardView.swift in Sources */,
 				5C53AFCB2AFE8B720091796D /* CameraViewController.swift in Sources */,
 				5CE5935C2B000989001FF9D6 /* CalendarView.swift in Sources */,
 				5C05CD5F2B01429E005BBF9E /* EntryRow.swift in Sources */,
 				5C53AF9E2AFE62210091796D /* ContentView.swift in Sources */,
 				5C53AFCF2AFEA9480091796D /* CameraView.swift in Sources */,
-				5C05CD622B0142E5005BBF9E /* Entry.swift in Sources */,
+				5C05CD622B0142E5005BBF9E /* EntryItem.swift in Sources */,
 				5C05CD5C2B013B3D005BBF9E /* EntryListView.swift in Sources */,
+				5C5B575A2B023CA1008F29F8 /* EntrySummaryView.swift in Sources */,
 				5C53AF9C2AFE62210091796D /* pickleApp.swift in Sources */,
 				5C53AFA82AFE62220091796D /* pickle.xcdatamodeld in Sources */,
 				5CE5935A2AFFFE95001FF9D6 /* CalendarViewController.swift in Sources */,

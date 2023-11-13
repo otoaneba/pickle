@@ -7,12 +7,22 @@
 
 import SwiftUI
 
-struct EntryRow: View {
+struct EntryRowItem: View {
+    let entryItem: EntryItem
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack {
+                Text("\(entryItem.title)")
+                Text("\(entryItem.date.formatted(date: .numeric, time: .omitted))")
+            }
+            Spacer()
+            Image(systemName: entryItem.entryType)
+            
+        }
+        .padding()
     }
 }
 
 #Preview {
-    EntryRow()
+    EntryRowItem(entryItem: EntryItem(id: UUID(), title: "Trip to China", date: Date(), status: "status", duration: .seconds(5), location: "Atlanta, GA", comment: "I am happy today", entryType: "video"))
 }
