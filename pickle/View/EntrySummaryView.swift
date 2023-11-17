@@ -13,7 +13,6 @@ struct EntrySummaryView: View {
 
     var body: some View {
         VStack {
-            
             VideoCardView(url: entry.getImageUrl())
                 .padding()
             List {
