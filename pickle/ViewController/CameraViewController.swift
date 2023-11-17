@@ -50,11 +50,11 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
         view.backgroundColor = .black
         view.layer.addSublayer(previewLayer)
         view.addSubview(shutterButton)
-        view.addSubview(switchCameraButton)
+//        view.addSubview(switchCameraButton)
         checkCameraPermissions()
 
         shutterButton.addTarget(self, action: #selector(didTapTakePhoto), for: .touchUpInside)
-        switchCameraButton.addTarget(self, action: #selector(didTapTakePhoto), for: .touchUpInside)
+//        switchCameraButton.addTarget(self, action: #selector(didTapTakePhoto), for: .touchUpInside)
     }
     
     override func viewDidLayoutSubviews() {
