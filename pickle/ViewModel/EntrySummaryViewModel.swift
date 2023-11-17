@@ -33,6 +33,6 @@ class EntrySummaryViewModel: ObservableObject {
     
     private func saveImage() {
         guard let image = image else { return }
-        imageMessage = manager.saveImage(image: image, name: imageName)
+        imageMessage = manager.saveImage(image: image, name: imageName).status
     }
 }

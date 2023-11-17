@@ -13,9 +13,9 @@ struct EntrySummaryView: View {
 
     var body: some View {
         VStack {
-            // TODO:
-//            VideoCardView()
-//                .padding()
+            
+            VideoCardView(url: entry.getImageUrl())
+                .padding()
             List {
                 Section {
  

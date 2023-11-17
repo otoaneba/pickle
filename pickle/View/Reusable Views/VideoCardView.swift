@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct VideoCardView: View {
-    let image: UIImage?
+//    let image: UIImage?
+    let url: URL?
     
     var body: some View {
         ZStack{
             ZStack(alignment: .bottomLeading) {
-                if let image = image {
-                    Image(uiImage: image)
+                if let data = try? Data(contentsOf: url ?? URL(string: "")!), let loaded = UIImage(data: data) {
+                    Image(uiImage: loaded)
                         .resizable()
                         .scaledToFill()
                         .cornerRadius(30)
                 }
+//                if let image = image {
+//                    Image(uiImage: image)
+//                        .resizable()
+//                        .scaledToFill()
+//                        .cornerRadius(30)
+//                }
 //                AsyncImage(url: URL(string: "file:///var/mobile/Containers/Data/Application/A9B4C85A-B1C3-4D56-903D-896CA587B206/Documents/test.jpg")!) { image in
 //                    image.resizable()
 //                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
@@ -49,5 +56,5 @@ struct VideoCardView: View {
 }
 
 #Preview {
-    VideoCardView(image: nil)
+    VideoCardView(url: URL(string: "")!)
 }

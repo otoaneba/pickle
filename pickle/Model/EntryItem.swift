@@ -29,4 +29,8 @@ struct EntryItem {
         self.entryType = entryType
         self.imageUrl = imageUrl
     }
+
+    public func getImageUrl() -> URL {
+        return self.imageUrl
+    }
 }

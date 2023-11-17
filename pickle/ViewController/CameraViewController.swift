@@ -23,7 +23,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
     // File manager
     let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
     let manager = LocalFileManager.instance
-    var saveImageStatus: String = ""
+    var saveImageStatus: (status: String, url: URL?)?
     
     private var microPhonePermission: Bool = false
     // shutter button
@@ -60,7 +60,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         previewLayer.frame = view.bounds
-        
         shutterButton.center = CGPoint(x: view.frame.size.width/2, y: view.frame.size.height - 100)
         switchCameraButton.center = CGPoint(x: view.frame.size.width/2, y: view.frame.size.height/2)
     }
@@ -102,7 +101,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
         @unknown default:
             break
         }
-        
     }
     
     private func setUpCamera() {
@@ -119,7 +117,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
                 }
                 previewLayer.videoGravity = .resizeAspectFill
                 previewLayer.session = session
-                
+    
                 DispatchQueue.main.async {
                     session.startRunning()
                     self.session = session
@@ -183,9 +181,12 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate {
         }
         session?.stopRunning()
         saveImageStatus = manager.saveImage(image: image, name: "test")
-        if saveImageStatus == "Success" {
-//            goToEntrySummary(path: )
-        }
+//        saveImage(image: image, name: "test")
+        
+        
+        guard let imagePath = saveImageStatus?.url else { return }
+        goToEntrySummary(path: imagePath)
+        
 //        saveImage(image: image, name: "test")
        
 //        let imageView = UIImageView(image: image)

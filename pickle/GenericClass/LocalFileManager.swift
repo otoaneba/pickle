@@ -16,17 +16,17 @@ class LocalFileManager {
         createFolderIfNeeded()
     }
     
-    func saveImage(image: UIImage, name: String) -> String {
+    func saveImage(image: UIImage, name: String) -> (status: String, url: URL?) {
         guard
             let data = image.jpegData(compressionQuality: 1.0),
             let path = getPathForImage(name: name) else {
-            return "Error getting image"
+            return ("Error getting image", nil)
         }
         do {
             try data.write(to: path)
-            return "Success"
+            return ("Success", path)
         } catch let error {
-            return "Error saving image with error: \(error)."
+            return ("Error saving image with error: \(error).", nil)
         }
     }
     
