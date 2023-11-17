@@ -27,7 +27,8 @@ struct ContentView: View {
                     Image(systemName: "video.fill")
                         .renderingMode(.original)
                 }
-                .navigationTitle("Pickle")
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
             }
             .padding(.vertical, 100)
             Spacer()

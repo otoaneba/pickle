@@ -23,6 +23,9 @@
 		5C53AFCF2AFEA9480091796D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFCE2AFEA9480091796D /* CameraView.swift */; };
 		5C5B575A2B023CA1008F29F8 /* EntrySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B57592B023CA1008F29F8 /* EntrySummaryView.swift */; };
 		5C5B575C2B027B4A008F29F8 /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B575B2B027B4A008F29F8 /* VideoCardView.swift */; };
+		5C5B575E2B03BED8008F29F8 /* VideoRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B575D2B03BED8008F29F8 /* VideoRecorderViewController.swift */; };
+		5CC0AB9B2B065523008D979A /* EntrySummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0AB9A2B065523008D979A /* EntrySummaryViewModel.swift */; };
+		5CC0AB9E2B0657D1008D979A /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0AB9D2B0657D1008D979A /* LocalFileManager.swift */; };
 		5CE593582AFFFDEB001FF9D6 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE593572AFFFDEB001FF9D6 /* HorizonCalendar */; };
 		5CE5935A2AFFFE95001FF9D6 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */; };
 		5CE5935C2B000989001FF9D6 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5935B2B000989001FF9D6 /* CalendarView.swift */; };
@@ -65,6 +68,10 @@
 		5C53AFCE2AFEA9480091796D /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		5C5B57592B023CA1008F29F8 /* EntrySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrySummaryView.swift; sourceTree = "<group>"; };
 		5C5B575B2B027B4A008F29F8 /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
+		5C5B575D2B03BED8008F29F8 /* VideoRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderViewController.swift; sourceTree = "<group>"; };
+		5C5B575F2B050BE8008F29F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5CC0AB9A2B065523008D979A /* EntrySummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrySummaryViewModel.swift; sourceTree = "<group>"; };
+		5CC0AB9D2B0657D1008D979A /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		5CE5935B2B000989001FF9D6 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +142,9 @@
 		5C53AF9A2AFE62210091796D /* pickle */ = {
 			isa = PBXGroup;
 			children = (
+				5CC0AB9C2B0657A5008D979A /* GenericClass */,
+				5CC0AB992B06550C008D979A /* ViewModel */,
+				5C5B575F2B050BE8008F29F8 /* Info.plist */,
 				5C53AF9B2AFE62210091796D /* pickleApp.swift */,
 				5C05CD602B0142C2005BBF9E /* Model */,
 				5C53AFCD2AFE8B900091796D /* ViewController */,
@@ -190,8 +200,25 @@
 			children = (
 				5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */,
 				5C53AFCA2AFE8B720091796D /* CameraViewController.swift */,
+				5C5B575D2B03BED8008F29F8 /* VideoRecorderViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5CC0AB992B06550C008D979A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0AB9A2B065523008D979A /* EntrySummaryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5CC0AB9C2B0657A5008D979A /* GenericClass */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0AB9D2B0657D1008D979A /* LocalFileManager.swift */,
+			);
+			path = GenericClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,8 +364,11 @@
 				5C05CD5F2B01429E005BBF9E /* EntryRow.swift in Sources */,
 				5C53AF9E2AFE62210091796D /* ContentView.swift in Sources */,
 				5C53AFCF2AFEA9480091796D /* CameraView.swift in Sources */,
+				5CC0AB9E2B0657D1008D979A /* LocalFileManager.swift in Sources */,
 				5C05CD622B0142E5005BBF9E /* EntryItem.swift in Sources */,
+				5CC0AB9B2B065523008D979A /* EntrySummaryViewModel.swift in Sources */,
 				5C05CD5C2B013B3D005BBF9E /* EntryListView.swift in Sources */,
+				5C5B575E2B03BED8008F29F8 /* VideoRecorderViewController.swift in Sources */,
 				5C5B575A2B023CA1008F29F8 /* EntrySummaryView.swift in Sources */,
 				5C53AF9C2AFE62210091796D /* pickleApp.swift in Sources */,
 				5C53AFA82AFE62220091796D /* pickle.xcdatamodeld in Sources */,
@@ -509,7 +539,10 @@
 				DEVELOPMENT_TEAM = 73JBJ22DZF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pickle/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Pickle to use camera? This app only saves data internally.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow Pickle to use microphone? This app only saves data internally.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -539,7 +572,10 @@
 				DEVELOPMENT_TEAM = 73JBJ22DZF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pickle/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Pickle to use camera? This app only saves data internally.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow Pickle to use microphone? This app only saves data internally.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

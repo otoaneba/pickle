@@ -16,8 +16,9 @@ struct EntryItem {
     var location: String
     var comment: String
     var entryType: String
+    var imageUrl: URL
     
-    init(id: UUID, title: String, date: Date, status: String, duration: Duration, location: String, comment: String, entryType: String) {
+    init(id: UUID, title: String, date: Date, status: String, duration: Duration, location: String, comment: String, entryType: String, imageUrl: URL) {
         self.id = id
         self.title = title
         self.date = date
@@ -26,5 +27,6 @@ struct EntryItem {
         self.location = location
         self.comment = comment
         self.entryType = entryType
+        self.imageUrl = imageUrl
     }
 }

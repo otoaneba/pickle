@@ -24,5 +24,5 @@ struct EntryRowItem: View {
 }
 
 #Preview {
-    EntryRowItem(entryItem: EntryItem(id: UUID(), title: "Trip to China", date: Date(), status: "status", duration: .seconds(5), location: "Atlanta, GA", comment: "I am happy today", entryType: "video"))
+    EntryRowItem(entryItem: EntryItem(id: UUID(), title: "Trip to China", date: Date(), status: "status", duration: .seconds(5), location: "Atlanta, GA", comment: "I am happy today", entryType: "video", imageUrl: URL(string: "file:///var/mobile/Containers/Data/Application/57971C6D-889D-4CB7-ADFD-90E3BB6420CA/Documents/test.jpg")!))
 }
