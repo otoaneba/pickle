@@ -10,25 +10,31 @@ import SwiftUI
 struct EntrySummaryView: View {
     var entry: EntryItem
     let vm: EntrySummaryViewModel = EntrySummaryViewModel()
+    @State private var notes = ""
 
     var body: some View {
         VStack {
             VideoCardView(url: entry.getImageUrl())
                 .padding()
-            List {
-                Section {
- 
                     LabeledContent("Date", value: "\(entry.date.formatted(date: .numeric, time: .omitted))")
                     LabeledContent("Location", value: "\(entry.location)")
-                    Section {
-                        Text("\(entry.comment)")
-                    } header: {
-                        Text("Notes")
-                    }
+                    Label("Lightning", systemImage: "list.clipboard.fill")
+                    TextEditor(text: $notes)
+                        .frame(height: 350)
+                        .cornerRadius(10)
+                        .border(.white)
   
-                }
-            }.listStyle(.inset)
-    
+            Button(action: {
+                
+            }, label: {
+                Text("Save")
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .cornerRadius(10)
+            })
+            Spacer()
         }
     }
 }
