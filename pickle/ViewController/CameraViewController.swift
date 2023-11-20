@@ -165,9 +165,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
         let vc = UIHostingController(rootView: EntrySummaryView(entry: entry))
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
     func switchCamera() {
-
     }
 }
 

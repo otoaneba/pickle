@@ -12,12 +12,12 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @State var selectedDate: Date = Date()
     @State var selection: String? = nil
-    
+
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-    
+
     var body: some View {
         NavigationView {
             VStack() {

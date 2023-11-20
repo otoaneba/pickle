@@ -21,6 +21,7 @@
 		5C53AFBE2AFE62220091796D /* pickleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFBD2AFE62220091796D /* pickleUITestsLaunchTests.swift */; };
 		5C53AFCB2AFE8B720091796D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFCA2AFE8B720091796D /* CameraViewController.swift */; };
 		5C53AFCF2AFEA9480091796D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFCE2AFEA9480091796D /* CameraView.swift */; };
+		5C54CEE32B0BFBE90022A03B /* DailyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C54CEE22B0BFBE90022A03B /* DailyEntry.swift */; };
 		5C5B575A2B023CA1008F29F8 /* EntrySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B57592B023CA1008F29F8 /* EntrySummaryView.swift */; };
 		5C5B575C2B027B4A008F29F8 /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B575B2B027B4A008F29F8 /* VideoCardView.swift */; };
 		5C5B575E2B03BED8008F29F8 /* VideoRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B575D2B03BED8008F29F8 /* VideoRecorderViewController.swift */; };
@@ -66,6 +67,7 @@
 		5C53AFBD2AFE62220091796D /* pickleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5C53AFCA2AFE8B720091796D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		5C53AFCE2AFEA9480091796D /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		5C54CEE22B0BFBE90022A03B /* DailyEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyEntry.swift; sourceTree = "<group>"; };
 		5C5B57592B023CA1008F29F8 /* EntrySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrySummaryView.swift; sourceTree = "<group>"; };
 		5C5B575B2B027B4A008F29F8 /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
 		5C5B575D2B03BED8008F29F8 /* VideoRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				5C05CD612B0142E5005BBF9E /* EntryItem.swift */,
+				5C54CEE22B0BFBE90022A03B /* DailyEntry.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C53AFA52AFE62220091796D /* Persistence.swift in Sources */,
+				5C54CEE32B0BFBE90022A03B /* DailyEntry.swift in Sources */,
 				5C5B575C2B027B4A008F29F8 /* VideoCardView.swift in Sources */,
 				5C53AFCB2AFE8B720091796D /* CameraViewController.swift in Sources */,
 				5CE5935C2B000989001FF9D6 /* CalendarView.swift in Sources */,

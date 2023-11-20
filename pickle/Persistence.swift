@@ -17,6 +17,12 @@ struct PersistenceController {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
         }
+        // Create 10 example programming languages.
+        for _ in 0..<10 {
+            let language = ProgrammingLanguage(context: result.container.viewContext)
+            language.name = "Example Language 1"
+            language.creator = "A. Programmer"
+        }
         do {
             try viewContext.save()
         } catch {
@@ -52,5 +58,17 @@ struct PersistenceController {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+    }
+    
+    func save() {
+        let context = container.viewContext
+
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                // Show some error here
+            }
+        }
     }
 }

@@ -1,27 +1,29 @@
 //
-//  Entry.swift
-//  pickle
+//  DailyEntry+CoreDataProperties.swift
+//
 //
 //  Created by Naoto Abe on 11/20/23.
+//
+//  This file was automatically generated and should not be edited.
 //
 
 import Foundation
 import CoreData
 import UIKit
 
-@objc(Entry)
-class Entry: NSManagedObject {
-    
-    @nonobjc public class override func fetchRequest() -> NSFetchRequest<Entry> {
-        return NSFetchRequest(entityName: "Entry"))
+@objc(DailyEntry)
+class DailyEntry: NSManagedObject {
+
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<DailyEntry> {
+        return NSFetchRequest<DailyEntry>(entityName: "DailyEntry")
     }
-    
-    @NSManaged public var image: UIImage?
+
     @NSManaged public var date: Date?
-    @NSManaged public var note: String?
-    
+    @NSManaged public var image: UIImage?
+    @NSManaged public var notes: String?
+
 }
 
-extension Entry: Identifiable {
-    
+extension DailyEntry : Identifiable {
+
 }

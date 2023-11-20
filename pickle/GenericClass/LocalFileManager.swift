@@ -15,7 +15,7 @@ class LocalFileManager {
     init() {
         createFolderIfNeeded()
     }
-    
+
     func saveImage(image: UIImage, name: String) -> (status: String, url: URL?) {
         guard
             let data = image.jpegData(compressionQuality: 1.0),
