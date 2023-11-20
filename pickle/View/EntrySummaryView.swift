@@ -14,7 +14,7 @@ struct EntrySummaryView: View {
     @State private var saveButtonPressed: Bool = false
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 VideoCardView(url: entry.getImageUrl())
                     .padding()
@@ -25,8 +25,21 @@ struct EntrySummaryView: View {
                             .frame(height: 350)
                             .cornerRadius(10)
                             .border(.white)
-                NavigationLink(destination: ContentView(), isActive: $saveButtonPressed) { EmptyView() }
-      
+                NavigationLink {
+                    ContentView()
+                } label: {
+                    Button(action: {
+                        self.saveButtonPressed = true
+                        
+                    }, label: {
+                        Text("Save")
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    })
+                }
                 Button(action: {
                     self.saveButtonPressed = true
                     

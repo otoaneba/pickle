@@ -6,7 +6,6 @@
         <attribute name="notes" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="imageUrl" optional="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <entity name="ProgrammingLanguage" representedClassName="ProgrammingLanguage" syncable="YES" codeGenerationType="class">
