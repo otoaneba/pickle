@@ -11,31 +11,38 @@ struct EntrySummaryView: View {
     var entry: EntryItem
     let vm: EntrySummaryViewModel = EntrySummaryViewModel()
     @State private var notes = ""
+    @State private var saveButtonPressed: Bool = false
 
     var body: some View {
-        VStack {
-            VideoCardView(url: entry.getImageUrl())
-                .padding()
-                    LabeledContent("Date", value: "\(entry.date.formatted(date: .numeric, time: .omitted))")
-                    LabeledContent("Location", value: "\(entry.location)")
-                    Label("Lightning", systemImage: "list.clipboard.fill")
-                    TextEditor(text: $notes)
-                        .frame(height: 350)
-                        .cornerRadius(10)
-                        .border(.white)
-  
-            Button(action: {
-                
-            }, label: {
-                Text("Save")
-                    .foregroundColor(.white)
+        NavigationView {
+            VStack {
+                VideoCardView(url: entry.getImageUrl())
                     .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-            })
-            Spacer()
+                        LabeledContent("Date", value: "\(entry.date.formatted(date: .numeric, time: .omitted))")
+                        LabeledContent("Location", value: "\(entry.location)")
+                        Label("Lightning", systemImage: "list.clipboard.fill")
+                        TextEditor(text: $notes)
+                            .frame(height: 350)
+                            .cornerRadius(10)
+                            .border(.white)
+                NavigationLink(destination: ContentView(), isActive: $saveButtonPressed) { EmptyView() }
+      
+                Button(action: {
+                    self.saveButtonPressed = true
+                    
+                }, label: {
+                    Text("Save")
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                })
+                Spacer()
+            }
+
         }
+
     }
 }
 
