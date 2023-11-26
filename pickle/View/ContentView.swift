@@ -23,7 +23,7 @@ struct ContentView: View {
             VStack() {
                 MyCalendarView()
                 Spacer()
-                NavigationLink(destination: CameraView()) {
+                NavigationLink(destination: VideoContentView()) {
                     Image(systemName: "video.fill")
                         .renderingMode(.original)
                 }

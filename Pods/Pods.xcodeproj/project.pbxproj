@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A2ACE6E5F621A0EE2259A8D4435229 /* SwiftyCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62D94A3F6D64F0EDFF4FC91146A70AA /* SwiftyCamViewController.swift */; };
+		132A0A94A2163F14EF37A3675A5E203D /* SwiftyCamViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F9CE073C47106F1270B8D2A9670E3 /* SwiftyCamViewControllerDelegate.swift */; };
+		1617737C00264612593DEDA3148C662B /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4EAAE1A72066271F6D8543017CEDB /* PreviewView.swift */; };
+		2B1ACFACE09BC466CCBC1436E9A70F26 /* Pods-pickle-pickleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 186F2D9B890B2D6C53AB059E8FBCAF29 /* Pods-pickle-pickleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E9B4F9990BFAA648C9BFAE8CC106298 /* Pods-pickleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9012BE7D06A1685880DEDEADF6DB4CF /* Pods-pickleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59141B5C837C861D0620F7BB1F75EF6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		66D97D294305D14E0CCB83C66734A2C8 /* SwiftyCamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93760E03DA69A907047493354EE4766 /* SwiftyCamButton.swift */; };
+		8B993DBC237BE38AA3A3E413AA0D065E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8EA1876E38362796CBC1121D9D693252 /* SwiftyCam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CEF3E26E16A8727E174409D608F04D /* SwiftyCam-dummy.m */; };
+		9CFF67969C993200EC463BAC155E7E94 /* Pods-pickle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7F1281DA0B649EA3F18C970A93FB6D /* Pods-pickle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF594BCA21684B6F1BFEDEBAD406405D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C356C32DD98B5F79F264315A367CB9B3 /* Pods-pickle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 234A5C99F3117B39577A6FFB6A7BD694 /* Pods-pickle-dummy.m */; };
+		D2823C535446D85F69402769B2AC1B62 /* Pods-pickleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF85C1350370A42FD4149A8CC3B8712 /* Pods-pickleTests-dummy.m */; };
+		D5E81FB41C9EE0AA3A6B5041B5543C2B /* Pods-pickle-pickleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBADF1749D911F1D2A7A5BF05B6534AB /* Pods-pickle-pickleUITests-dummy.m */; };
+		D7486F29A0281BF3895691642F0B4253 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82075294E1B08EC9CD7C6345AFAD8D /* Orientation.swift */; };
+		DD782A484E231822DFEC84BDB68BB2C5 /* SwiftyCam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D205E66F7B371B161388FD3349ACEEEC /* SwiftyCam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E01C69FDE3E6472B5663D5B06B5E89BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1219702C20872BEC0DCEE42E0B374810 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CD8663231A86ECCBFCC8FCC910209F3;
+			remoteInfo = "Pods-pickle";
+		};
+		5A671660A46561DF46F538060F7BDD39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64D8AA920E37251A430220E5E4088BDA;
+			remoteInfo = SwiftyCam;
+		};
+		E39FC1CD59585F678BE4A72023EE60A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64D8AA920E37251A430220E5E4088BDA;
+			remoteInfo = SwiftyCam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016129865494F5963505522436E619E7 /* Pods-pickle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pickle-Info.plist"; sourceTree = "<group>"; };
+		0B730CB322C6047EEC31B2A232D8DEF5 /* Pods-pickle-pickleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pickle-pickleUITests-Info.plist"; sourceTree = "<group>"; };
+		12E9BD4E4D074134C73A9F23B0C336A1 /* Pods-pickleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pickleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		186F2D9B890B2D6C53AB059E8FBCAF29 /* Pods-pickle-pickleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pickle-pickleUITests-umbrella.h"; sourceTree = "<group>"; };
+		234A5C99F3117B39577A6FFB6A7BD694 /* Pods-pickle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pickle-dummy.m"; sourceTree = "<group>"; };
+		23A005DF8CCF7B97E02BD71BEF8CA3E0 /* Pods-pickle-pickleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pickle-pickleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		512070C69F6A14A030DE4E6A0F6BE55F /* Pods-pickle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pickle.release.xcconfig"; sourceTree = "<group>"; };
+		53CEF3E26E16A8727E174409D608F04D /* SwiftyCam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyCam-dummy.m"; sourceTree = "<group>"; };
+		5570D7A9D4C0C6D679EB7357ED80D2C6 /* SwiftyCam-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyCam-prefix.pch"; sourceTree = "<group>"; };
+		59C01FE29AA57F3D7A78BBFB38626ADC /* Pods-pickleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pickleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		615569F9F2AAC26C59CD508B7D19C0A3 /* SwiftyCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		630F9CE073C47106F1270B8D2A9670E3 /* SwiftyCamViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamViewControllerDelegate.swift; path = Source/SwiftyCamViewControllerDelegate.swift; sourceTree = "<group>"; };
+		65EB1DD45ECB2BFB261309DF882668F9 /* Pods-pickleTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-pickleTests"; path = Pods_pickleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B7C64EDA47998ADC5FF29E3BCB9579F /* SwiftyCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyCam.debug.xcconfig; sourceTree = "<group>"; };
+		6F643D8C76D6FF9B78D45F36B3C75815 /* Pods-pickle-pickleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pickle-pickleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		705FB87CF7FF430B73A1BD0C099A43BB /* Pods-pickle-pickleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-pickle-pickleUITests.modulemap"; sourceTree = "<group>"; };
+		71D4EAAE1A72066271F6D8543017CEDB /* PreviewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreviewView.swift; path = Source/PreviewView.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7373DA34EB61598A37BC409F387BAEF4 /* Pods-pickleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pickleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		76AAD1D23F9F475177302AF2F5328F93 /* SwiftyCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyCam.release.xcconfig; sourceTree = "<group>"; };
+		8F06AD3C44633C94156663484658A28A /* Pods-pickleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-pickleTests.modulemap"; sourceTree = "<group>"; };
+		963975FAE983E03A1A7E3BC24BCB8788 /* Pods-pickle-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pickle-frameworks.sh"; sourceTree = "<group>"; };
+		9B97786E791189F486C1433D89A0331D /* Pods-pickle-pickleUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-pickle-pickleUITests"; path = Pods_pickle_pickleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2A60CDCABC94F61F4E0B292A39FB121 /* Pods-pickle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pickle-acknowledgements.plist"; sourceTree = "<group>"; };
+		A67E7F94D9F3C8835D6A2F77B9ABD318 /* Pods-pickleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pickleTests-Info.plist"; sourceTree = "<group>"; };
+		AE87C6F95F27C70982A4670A5BC4AECD /* Pods-pickleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pickleTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0E80FE5F91E122DB46DFF69D0544F77 /* Pods-pickle-pickleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pickle-pickleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C217E14F38193D3F829C8CD8C2F855B8 /* Pods-pickle */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-pickle"; path = Pods_pickle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B7EFA0843ED097195E277BBFDEB627 /* SwiftyCam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyCam.modulemap; sourceTree = "<group>"; };
+		CBADF1749D911F1D2A7A5BF05B6534AB /* Pods-pickle-pickleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pickle-pickleUITests-dummy.m"; sourceTree = "<group>"; };
+		CDF85C1350370A42FD4149A8CC3B8712 /* Pods-pickleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pickleTests-dummy.m"; sourceTree = "<group>"; };
+		CEFC4EB1800F72819F1C2C9AE2955BAE /* Pods-pickle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pickle-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D205E66F7B371B161388FD3349ACEEEC /* SwiftyCam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyCam-umbrella.h"; sourceTree = "<group>"; };
+		D62D94A3F6D64F0EDFF4FC91146A70AA /* SwiftyCamViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamViewController.swift; path = Source/SwiftyCamViewController.swift; sourceTree = "<group>"; };
+		D93760E03DA69A907047493354EE4766 /* SwiftyCamButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamButton.swift; path = Source/SwiftyCamButton.swift; sourceTree = "<group>"; };
+		DC507B08AE6DCB9C5149800D98FA59BB /* Pods-pickle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pickle.debug.xcconfig"; sourceTree = "<group>"; };
+		E0F2DFFC657C31515C9A9A4D81DC236C /* Pods-pickle-pickleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pickle-pickleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		EA82075294E1B08EC9CD7C6345AFAD8D /* Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Orientation.swift; path = Source/Orientation.swift; sourceTree = "<group>"; };
+		EC2EF58904F9E94399450F14AD642B81 /* Pods-pickle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-pickle.modulemap"; sourceTree = "<group>"; };
+		F5CCB15781FB33C89FEEADBFB947185E /* SwiftyCam-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyCam-Info.plist"; sourceTree = "<group>"; };
+		F71277B050F4CED9353BEEFA7DFF6D4D /* Pods-pickle-pickleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pickle-pickleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9012BE7D06A1685880DEDEADF6DB4CF /* Pods-pickleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pickleTests-umbrella.h"; sourceTree = "<group>"; };
+		FE7F1281DA0B649EA3F18C970A93FB6D /* Pods-pickle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pickle-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BD42A0F523E508C85EE927065AD1EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59141B5C837C861D0620F7BB1F75EF6E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33BBFD38979CDB84521A1BEE88873BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF594BCA21684B6F1BFEDEBAD406405D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71946EED41556B626B2BAD62048B8066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01C69FDE3E6472B5663D5B06B5E89BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F813E14871C7061D80E1114F5B0EE7C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B993DBC237BE38AA3A3E413AA0D065E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C526F9BF66EC396D69B4E37BBF04DE2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9A4460237F6F374D425305CA264B50B /* Pods-pickle */,
+				1DCD7822940B044F83B3B787E0EA1EEA /* Pods-pickle-pickleUITests */,
+				EE2AC393CEDE43C72EAE9602E7460C49 /* Pods-pickleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1DCD7822940B044F83B3B787E0EA1EEA /* Pods-pickle-pickleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				705FB87CF7FF430B73A1BD0C099A43BB /* Pods-pickle-pickleUITests.modulemap */,
+				C0E80FE5F91E122DB46DFF69D0544F77 /* Pods-pickle-pickleUITests-acknowledgements.markdown */,
+				F71277B050F4CED9353BEEFA7DFF6D4D /* Pods-pickle-pickleUITests-acknowledgements.plist */,
+				CBADF1749D911F1D2A7A5BF05B6534AB /* Pods-pickle-pickleUITests-dummy.m */,
+				E0F2DFFC657C31515C9A9A4D81DC236C /* Pods-pickle-pickleUITests-frameworks.sh */,
+				0B730CB322C6047EEC31B2A232D8DEF5 /* Pods-pickle-pickleUITests-Info.plist */,
+				186F2D9B890B2D6C53AB059E8FBCAF29 /* Pods-pickle-pickleUITests-umbrella.h */,
+				23A005DF8CCF7B97E02BD71BEF8CA3E0 /* Pods-pickle-pickleUITests.debug.xcconfig */,
+				6F643D8C76D6FF9B78D45F36B3C75815 /* Pods-pickle-pickleUITests.release.xcconfig */,
+			);
+			name = "Pods-pickle-pickleUITests";
+			path = "Target Support Files/Pods-pickle-pickleUITests";
+			sourceTree = "<group>";
+		};
+		1ED1FA9F35C19A3E521398FF7B8398C3 /* SwiftyCam */ = {
+			isa = PBXGroup;
+			children = (
+				EA82075294E1B08EC9CD7C6345AFAD8D /* Orientation.swift */,
+				71D4EAAE1A72066271F6D8543017CEDB /* PreviewView.swift */,
+				D93760E03DA69A907047493354EE4766 /* SwiftyCamButton.swift */,
+				D62D94A3F6D64F0EDFF4FC91146A70AA /* SwiftyCamViewController.swift */,
+				630F9CE073C47106F1270B8D2A9670E3 /* SwiftyCamViewControllerDelegate.swift */,
+				6BDEA965E66BE3561B5A823F8525DE1C /* Support Files */,
+			);
+			path = SwiftyCam;
+			sourceTree = "<group>";
+		};
+		2A94381D209F0649B6E7495626B6F656 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1ED1FA9F35C19A3E521398FF7B8398C3 /* SwiftyCam */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6BDEA965E66BE3561B5A823F8525DE1C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2B7EFA0843ED097195E277BBFDEB627 /* SwiftyCam.modulemap */,
+				53CEF3E26E16A8727E174409D608F04D /* SwiftyCam-dummy.m */,
+				F5CCB15781FB33C89FEEADBFB947185E /* SwiftyCam-Info.plist */,
+				5570D7A9D4C0C6D679EB7357ED80D2C6 /* SwiftyCam-prefix.pch */,
+				D205E66F7B371B161388FD3349ACEEEC /* SwiftyCam-umbrella.h */,
+				6B7C64EDA47998ADC5FF29E3BCB9579F /* SwiftyCam.debug.xcconfig */,
+				76AAD1D23F9F475177302AF2F5328F93 /* SwiftyCam.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyCam";
+			sourceTree = "<group>";
+		};
+		A9A4460237F6F374D425305CA264B50B /* Pods-pickle */ = {
+			isa = PBXGroup;
+			children = (
+				EC2EF58904F9E94399450F14AD642B81 /* Pods-pickle.modulemap */,
+				CEFC4EB1800F72819F1C2C9AE2955BAE /* Pods-pickle-acknowledgements.markdown */,
+				A2A60CDCABC94F61F4E0B292A39FB121 /* Pods-pickle-acknowledgements.plist */,
+				234A5C99F3117B39577A6FFB6A7BD694 /* Pods-pickle-dummy.m */,
+				963975FAE983E03A1A7E3BC24BCB8788 /* Pods-pickle-frameworks.sh */,
+				016129865494F5963505522436E619E7 /* Pods-pickle-Info.plist */,
+				FE7F1281DA0B649EA3F18C970A93FB6D /* Pods-pickle-umbrella.h */,
+				DC507B08AE6DCB9C5149800D98FA59BB /* Pods-pickle.debug.xcconfig */,
+				512070C69F6A14A030DE4E6A0F6BE55F /* Pods-pickle.release.xcconfig */,
+			);
+			name = "Pods-pickle";
+			path = "Target Support Files/Pods-pickle";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2A94381D209F0649B6E7495626B6F656 /* Pods */,
+				D25D104307A18C1CB81311DD0CEEDBA5 /* Products */,
+				1C526F9BF66EC396D69B4E37BBF04DE2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D25D104307A18C1CB81311DD0CEEDBA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C217E14F38193D3F829C8CD8C2F855B8 /* Pods-pickle */,
+				9B97786E791189F486C1433D89A0331D /* Pods-pickle-pickleUITests */,
+				65EB1DD45ECB2BFB261309DF882668F9 /* Pods-pickleTests */,
+				615569F9F2AAC26C59CD508B7D19C0A3 /* SwiftyCam.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE2AC393CEDE43C72EAE9602E7460C49 /* Pods-pickleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F06AD3C44633C94156663484658A28A /* Pods-pickleTests.modulemap */,
+				7373DA34EB61598A37BC409F387BAEF4 /* Pods-pickleTests-acknowledgements.markdown */,
+				12E9BD4E4D074134C73A9F23B0C336A1 /* Pods-pickleTests-acknowledgements.plist */,
+				CDF85C1350370A42FD4149A8CC3B8712 /* Pods-pickleTests-dummy.m */,
+				A67E7F94D9F3C8835D6A2F77B9ABD318 /* Pods-pickleTests-Info.plist */,
+				F9012BE7D06A1685880DEDEADF6DB4CF /* Pods-pickleTests-umbrella.h */,
+				59C01FE29AA57F3D7A78BBFB38626ADC /* Pods-pickleTests.debug.xcconfig */,
+				AE87C6F95F27C70982A4670A5BC4AECD /* Pods-pickleTests.release.xcconfig */,
+			);
+			name = "Pods-pickleTests";
+			path = "Target Support Files/Pods-pickleTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41D56967D8A4B0FA5EDFB57E1A76A1EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1ACFACE09BC466CCBC1436E9A70F26 /* Pods-pickle-pickleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBDDE0BF8BBB8B1B3F5D99B31E484F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9B4F9990BFAA648C9BFAE8CC106298 /* Pods-pickleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FB651ED151C7E4FF17D60E1CFE3670 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD782A484E231822DFEC84BDB68BB2C5 /* SwiftyCam-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E79E725023458B97DA7677755C8B220A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CFF67969C993200EC463BAC155E7E94 /* Pods-pickle-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		64D8AA920E37251A430220E5E4088BDA /* SwiftyCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BF34986C6CDFBE8F9F4CB00BF61CEC5 /* Build configuration list for PBXNativeTarget "SwiftyCam" */;
+			buildPhases = (
+				B8FB651ED151C7E4FF17D60E1CFE3670 /* Headers */,
+				28FBF8CDA755C42B0245887E57A453B9 /* Sources */,
+				F813E14871C7061D80E1114F5B0EE7C8 /* Frameworks */,
+				B859A245243043FA8AAF6146E9CBA690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyCam;
+			productName = SwiftyCam;
+			productReference = 615569F9F2AAC26C59CD508B7D19C0A3 /* SwiftyCam.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68E34AD9793331C39AB441553472350D /* Pods-pickleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D083899AD40B77CC32A9CBBB15392E /* Build configuration list for PBXNativeTarget "Pods-pickleTests" */;
+			buildPhases = (
+				7FBDDE0BF8BBB8B1B3F5D99B31E484F5 /* Headers */,
+				002D63CADBFC0339B84404C0818BB727 /* Sources */,
+				2BD42A0F523E508C85EE927065AD1EA8 /* Frameworks */,
+				E1204F05ADF5340851FD9C3CB76A2A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCFFBB0AFCF164E6AFD231BC9081A4BC /* PBXTargetDependency */,
+			);
+			name = "Pods-pickleTests";
+			productName = Pods_pickleTests;
+			productReference = 65EB1DD45ECB2BFB261309DF882668F9 /* Pods-pickleTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		6EAF05AB2BC5A53F3192CD0D41D41AA4 /* Pods-pickle-pickleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5F8203063DABEDCC3F7FC58170C35CA /* Build configuration list for PBXNativeTarget "Pods-pickle-pickleUITests" */;
+			buildPhases = (
+				41D56967D8A4B0FA5EDFB57E1A76A1EE /* Headers */,
+				51E3A1E4304BA53F4BCA10E251C68CB7 /* Sources */,
+				33BBFD38979CDB84521A1BEE88873BAC /* Frameworks */,
+				55FBAB3053C423FFF7CE6F884E34DD78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E034EDD4C3D1A2684FF40D24494DE840 /* PBXTargetDependency */,
+			);
+			name = "Pods-pickle-pickleUITests";
+			productName = Pods_pickle_pickleUITests;
+			productReference = 9B97786E791189F486C1433D89A0331D /* Pods-pickle-pickleUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		9CD8663231A86ECCBFCC8FCC910209F3 /* Pods-pickle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9DA0DD2E94EF1DF63C8589D78775C07 /* Build configuration list for PBXNativeTarget "Pods-pickle" */;
+			buildPhases = (
+				E79E725023458B97DA7677755C8B220A /* Headers */,
+				34B30127CC920E87BCADBE4A3E8BDA49 /* Sources */,
+				71946EED41556B626B2BAD62048B8066 /* Frameworks */,
+				3449410623FA59EE471B0B00E5C76CDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BC41F0B2A547EC709C89B885B202183 /* PBXTargetDependency */,
+			);
+			name = "Pods-pickle";
+			productName = Pods_pickle;
+			productReference = C217E14F38193D3F829C8CD8C2F855B8 /* Pods-pickle */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D25D104307A18C1CB81311DD0CEEDBA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CD8663231A86ECCBFCC8FCC910209F3 /* Pods-pickle */,
+				6EAF05AB2BC5A53F3192CD0D41D41AA4 /* Pods-pickle-pickleUITests */,
+				68E34AD9793331C39AB441553472350D /* Pods-pickleTests */,
+				64D8AA920E37251A430220E5E4088BDA /* SwiftyCam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3449410623FA59EE471B0B00E5C76CDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FBAB3053C423FFF7CE6F884E34DD78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B859A245243043FA8AAF6146E9CBA690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1204F05ADF5340851FD9C3CB76A2A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		002D63CADBFC0339B84404C0818BB727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2823C535446D85F69402769B2AC1B62 /* Pods-pickleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28FBF8CDA755C42B0245887E57A453B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7486F29A0281BF3895691642F0B4253 /* Orientation.swift in Sources */,
+				1617737C00264612593DEDA3148C662B /* PreviewView.swift in Sources */,
+				8EA1876E38362796CBC1121D9D693252 /* SwiftyCam-dummy.m in Sources */,
+				66D97D294305D14E0CCB83C66734A2C8 /* SwiftyCamButton.swift in Sources */,
+				03A2ACE6E5F621A0EE2259A8D4435229 /* SwiftyCamViewController.swift in Sources */,
+				132A0A94A2163F14EF37A3675A5E203D /* SwiftyCamViewControllerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B30127CC920E87BCADBE4A3E8BDA49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C356C32DD98B5F79F264315A367CB9B3 /* Pods-pickle-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E3A1E4304BA53F4BCA10E251C68CB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E81FB41C9EE0AA3A6B5041B5543C2B /* Pods-pickle-pickleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BC41F0B2A547EC709C89B885B202183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyCam;
+			target = 64D8AA920E37251A430220E5E4088BDA /* SwiftyCam */;
+			targetProxy = 5A671660A46561DF46F538060F7BDD39 /* PBXContainerItemProxy */;
+		};
+		E034EDD4C3D1A2684FF40D24494DE840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyCam;
+			target = 64D8AA920E37251A430220E5E4088BDA /* SwiftyCam */;
+			targetProxy = E39FC1CD59585F678BE4A72023EE60A4 /* PBXContainerItemProxy */;
+		};
+		FCFFBB0AFCF164E6AFD231BC9081A4BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-pickle";
+			target = 9CD8663231A86ECCBFCC8FCC910209F3 /* Pods-pickle */;
+			targetProxy = 1219702C20872BEC0DCEE42E0B374810 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		133861C6729B0940510DF63F929DDF0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F643D8C76D6FF9B78D45F36B3C75815 /* Pods-pickle-pickleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-pickle-pickleUITests/Pods-pickle-pickleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pickle-pickleUITests/Pods-pickle-pickleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1DBD17A93540204BB737CD5CFBFDE332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76AAD1D23F9F475177302AF2F5328F93 /* SwiftyCam.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyCam/SwiftyCam-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyCam/SwiftyCam-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyCam/SwiftyCam.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyCam;
+				PRODUCT_NAME = SwiftyCam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2E3EEA7B665DCCF91C887AE5A102CF99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512070C69F6A14A030DE4E6A0F6BE55F /* Pods-pickle.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-pickle/Pods-pickle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pickle/Pods-pickle.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		50547AF27339F1F92F7CB83B1BBE7FBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7C64EDA47998ADC5FF29E3BCB9579F /* SwiftyCam.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyCam/SwiftyCam-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyCam/SwiftyCam-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyCam/SwiftyCam.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyCam;
+				PRODUCT_NAME = SwiftyCam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7E4F184BB95A35A62D8E047725C9E4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC507B08AE6DCB9C5149800D98FA59BB /* Pods-pickle.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-pickle/Pods-pickle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pickle/Pods-pickle.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F9E613A6C5B8A041F6C61810012F4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE87C6F95F27C70982A4670A5BC4AECD /* Pods-pickleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-pickleTests/Pods-pickleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pickleTests/Pods-pickleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9FCF4CCAA6C89A3A6C2C1A32C92D327B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C01FE29AA57F3D7A78BBFB38626ADC /* Pods-pickleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-pickleTests/Pods-pickleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pickleTests/Pods-pickleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1A5813F1428D3D46BFADCC7C627F311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A005DF8CCF7B97E02BD71BEF8CA3E0 /* Pods-pickle-pickleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-pickle-pickleUITests/Pods-pickle-pickleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pickle-pickleUITests/Pods-pickle-pickleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BF34986C6CDFBE8F9F4CB00BF61CEC5 /* Build configuration list for PBXNativeTarget "SwiftyCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50547AF27339F1F92F7CB83B1BBE7FBF /* Debug */,
+				1DBD17A93540204BB737CD5CFBFDE332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D083899AD40B77CC32A9CBBB15392E /* Build configuration list for PBXNativeTarget "Pods-pickleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCF4CCAA6C89A3A6C2C1A32C92D327B /* Debug */,
+				8F9E613A6C5B8A041F6C61810012F4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9DA0DD2E94EF1DF63C8589D78775C07 /* Build configuration list for PBXNativeTarget "Pods-pickle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E4F184BB95A35A62D8E047725C9E4EC /* Debug */,
+				2E3EEA7B665DCCF91C887AE5A102CF99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5F8203063DABEDCC3F7FC58170C35CA /* Build configuration list for PBXNativeTarget "Pods-pickle-pickleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A5813F1428D3D46BFADCC7C627F311 /* Debug */,
+				133861C6729B0940510DF63F929DDF0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

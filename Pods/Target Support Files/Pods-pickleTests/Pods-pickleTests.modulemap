@@ -1,0 +1,6 @@
+framework module Pods_pickleTests {
+  umbrella header "Pods-pickleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

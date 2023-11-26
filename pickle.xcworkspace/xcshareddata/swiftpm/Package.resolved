@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "aespa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/enebin/Aespa.git",
+      "state" : {
+        "revision" : "a48ff8c2505609d52bcc02229e8990396835078a",
+        "version" : "0.4.1"
+      }
+    },
+    {
+      "identity" : "horizoncalendar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/HorizonCalendar",
+      "state" : {
+        "branch" : "master",
+        "revision" : "76b8bd825ddb87be7bcb8f8c6df4865e18236ab8"
+      }
+    }
+  ],
+  "version" : 2
+}

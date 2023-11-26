@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import SwiftyCam
 
 struct CameraView: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> CameraViewController {
-        let viewController = CameraViewController()
+    func makeUIViewController(context: Context) -> SwiftyCamViewController {
+        let viewController = SwiftyCamViewController()
         return viewController
     }
     
-    func updateUIViewController(_ uiViewController: CameraViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: SwiftyCamViewController, context: Context) {
         
     }
 }

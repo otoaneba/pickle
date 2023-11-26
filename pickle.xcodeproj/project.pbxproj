@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28F99CD833D999AD3CBCA110 /* Pods_pickle_pickleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD4E03E1B09DC52D69BCF7B /* Pods_pickle_pickleUITests.framework */; };
+		4F1E003AC505583464259BFC /* Pods_pickle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B7E07CD0DB7D79C521766 /* Pods_pickle.framework */; };
 		5C05CD5C2B013B3D005BBF9E /* EntryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C05CD5B2B013B3D005BBF9E /* EntryListView.swift */; };
 		5C05CD5F2B01429E005BBF9E /* EntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C05CD5E2B01429E005BBF9E /* EntryRow.swift */; };
 		5C05CD622B0142E5005BBF9E /* EntryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C05CD612B0142E5005BBF9E /* EntryItem.swift */; };
@@ -22,14 +24,19 @@
 		5C53AFCB2AFE8B720091796D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFCA2AFE8B720091796D /* CameraViewController.swift */; };
 		5C53AFCF2AFEA9480091796D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53AFCE2AFEA9480091796D /* CameraView.swift */; };
 		5C54CEE32B0BFBE90022A03B /* DailyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C54CEE22B0BFBE90022A03B /* DailyEntry.swift */; };
+		5C54CEE52B0E2D4C0022A03B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C54CEE42B0E2D4C0022A03B /* ImageSaver.swift */; };
+		5C560FF62B1111F60016AA05 /* Aespa in Frameworks */ = {isa = PBXBuildFile; productRef = 5C560FF52B1111F60016AA05 /* Aespa */; };
+		5C560FF82B1114260016AA05 /* VideoContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C560FF72B1114260016AA05 /* VideoContentViewModel.swift */; };
+		5C560FFA2B1115F10016AA05 /* VideoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C560FF92B1115F10016AA05 /* VideoContentView.swift */; };
 		5C5B575A2B023CA1008F29F8 /* EntrySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B57592B023CA1008F29F8 /* EntrySummaryView.swift */; };
 		5C5B575C2B027B4A008F29F8 /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B575B2B027B4A008F29F8 /* VideoCardView.swift */; };
-		5C5B575E2B03BED8008F29F8 /* VideoRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B575D2B03BED8008F29F8 /* VideoRecorderViewController.swift */; };
+		5CB36ED22B10A96F003DF8B7 /* SwifyCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB36ED12B10A96F003DF8B7 /* SwifyCamViewController.swift */; };
 		5CC0AB9B2B065523008D979A /* EntrySummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0AB9A2B065523008D979A /* EntrySummaryViewModel.swift */; };
 		5CC0AB9E2B0657D1008D979A /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0AB9D2B0657D1008D979A /* LocalFileManager.swift */; };
 		5CE593582AFFFDEB001FF9D6 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE593572AFFFDEB001FF9D6 /* HorizonCalendar */; };
 		5CE5935A2AFFFE95001FF9D6 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */; };
 		5CE5935C2B000989001FF9D6 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5935B2B000989001FF9D6 /* CalendarView.swift */; };
+		A0764C773AEED7A8730B8DDF /* Pods_pickleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD7B4793E70CF43714247A3 /* Pods_pickleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22A2BD5E86867A45545E0F74 /* Pods-pickleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickleTests.debug.xcconfig"; path = "Target Support Files/Pods-pickleTests/Pods-pickleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E2608BED96910184A8C121F /* Pods-pickleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickleTests.release.xcconfig"; path = "Target Support Files/Pods-pickleTests/Pods-pickleTests.release.xcconfig"; sourceTree = "<group>"; };
+		5BD7B4793E70CF43714247A3 /* Pods_pickleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pickleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C05CD5B2B013B3D005BBF9E /* EntryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListView.swift; sourceTree = "<group>"; };
 		5C05CD5E2B01429E005BBF9E /* EntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRow.swift; sourceTree = "<group>"; };
 		5C05CD612B0142E5005BBF9E /* EntryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryItem.swift; sourceTree = "<group>"; };
@@ -68,14 +78,23 @@
 		5C53AFCA2AFE8B720091796D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		5C53AFCE2AFEA9480091796D /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		5C54CEE22B0BFBE90022A03B /* DailyEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyEntry.swift; sourceTree = "<group>"; };
+		5C54CEE42B0E2D4C0022A03B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		5C560FF72B1114260016AA05 /* VideoContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContentViewModel.swift; sourceTree = "<group>"; };
+		5C560FF92B1115F10016AA05 /* VideoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContentView.swift; sourceTree = "<group>"; };
 		5C5B57592B023CA1008F29F8 /* EntrySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrySummaryView.swift; sourceTree = "<group>"; };
 		5C5B575B2B027B4A008F29F8 /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
-		5C5B575D2B03BED8008F29F8 /* VideoRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderViewController.swift; sourceTree = "<group>"; };
 		5C5B575F2B050BE8008F29F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5CB36ED12B10A96F003DF8B7 /* SwifyCamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifyCamViewController.swift; sourceTree = "<group>"; };
 		5CC0AB9A2B065523008D979A /* EntrySummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrySummaryViewModel.swift; sourceTree = "<group>"; };
 		5CC0AB9D2B0657D1008D979A /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		5CE5935B2B000989001FF9D6 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		9B4B7E07CD0DB7D79C521766 /* Pods_pickle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pickle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27D64C852CB7ED2B0BA5F13 /* Pods-pickle-pickleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickle-pickleUITests.debug.xcconfig"; path = "Target Support Files/Pods-pickle-pickleUITests/Pods-pickle-pickleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAD4E03E1B09DC52D69BCF7B /* Pods_pickle_pickleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pickle_pickleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEABAECB16FCD93CC2FDD18C /* Pods-pickle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickle.release.xcconfig"; path = "Target Support Files/Pods-pickle/Pods-pickle.release.xcconfig"; sourceTree = "<group>"; };
+		ED780ADF71E9A289D526308F /* Pods-pickle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickle.debug.xcconfig"; path = "Target Support Files/Pods-pickle/Pods-pickle.debug.xcconfig"; sourceTree = "<group>"; };
+		FE09CB7B61621456A32CB69E /* Pods-pickle-pickleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pickle-pickleUITests.release.xcconfig"; path = "Target Support Files/Pods-pickle-pickleUITests/Pods-pickle-pickleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C560FF62B1111F60016AA05 /* Aespa in Frameworks */,
 				5CE593582AFFFDEB001FF9D6 /* HorizonCalendar in Frameworks */,
+				4F1E003AC505583464259BFC /* Pods_pickle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0764C773AEED7A8730B8DDF /* Pods_pickleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F99CD833D999AD3CBCA110 /* Pods_pickle_pickleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +152,8 @@
 				5C53AFB02AFE62220091796D /* pickleTests */,
 				5C53AFBA2AFE62220091796D /* pickleUITests */,
 				5C53AF992AFE62210091796D /* Products */,
+				CA0C901F64FDDFEB2C11C518 /* Pods */,
+				B1E9965B7725DE89561928AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +219,7 @@
 				5CE5935B2B000989001FF9D6 /* CalendarView.swift */,
 				5C05CD5B2B013B3D005BBF9E /* EntryListView.swift */,
 				5C5B57592B023CA1008F29F8 /* EntrySummaryView.swift */,
+				5C560FF92B1115F10016AA05 /* VideoContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,7 +229,7 @@
 			children = (
 				5CE593592AFFFE95001FF9D6 /* CalendarViewController.swift */,
 				5C53AFCA2AFE8B720091796D /* CameraViewController.swift */,
-				5C5B575D2B03BED8008F29F8 /* VideoRecorderViewController.swift */,
+				5CB36ED12B10A96F003DF8B7 /* SwifyCamViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -212,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				5CC0AB9A2B065523008D979A /* EntrySummaryViewModel.swift */,
+				5C560FF72B1114260016AA05 /* VideoContentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -220,8 +247,32 @@
 			isa = PBXGroup;
 			children = (
 				5CC0AB9D2B0657D1008D979A /* LocalFileManager.swift */,
+				5C54CEE42B0E2D4C0022A03B /* ImageSaver.swift */,
 			);
 			path = GenericClass;
+			sourceTree = "<group>";
+		};
+		B1E9965B7725DE89561928AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B4B7E07CD0DB7D79C521766 /* Pods_pickle.framework */,
+				CAD4E03E1B09DC52D69BCF7B /* Pods_pickle_pickleUITests.framework */,
+				5BD7B4793E70CF43714247A3 /* Pods_pickleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA0C901F64FDDFEB2C11C518 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED780ADF71E9A289D526308F /* Pods-pickle.debug.xcconfig */,
+				DEABAECB16FCD93CC2FDD18C /* Pods-pickle.release.xcconfig */,
+				C27D64C852CB7ED2B0BA5F13 /* Pods-pickle-pickleUITests.debug.xcconfig */,
+				FE09CB7B61621456A32CB69E /* Pods-pickle-pickleUITests.release.xcconfig */,
+				22A2BD5E86867A45545E0F74 /* Pods-pickleTests.debug.xcconfig */,
+				2E2608BED96910184A8C121F /* Pods-pickleTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C53AFC12AFE62220091796D /* Build configuration list for PBXNativeTarget "pickle" */;
 			buildPhases = (
+				E86774FAD0868CC74B7DAF2D /* [CP] Check Pods Manifest.lock */,
 				5C53AF942AFE62210091796D /* Sources */,
 				5C53AF952AFE62210091796D /* Frameworks */,
 				5C53AF962AFE62210091796D /* Resources */,
+				BF7E3CD933406DE887B440E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +295,7 @@
 			name = pickle;
 			packageProductDependencies = (
 				5CE593572AFFFDEB001FF9D6 /* HorizonCalendar */,
+				5C560FF52B1111F60016AA05 /* Aespa */,
 			);
 			productName = pickle;
 			productReference = 5C53AF982AFE62210091796D /* pickle.app */;
@@ -251,6 +305,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C53AFC42AFE62220091796D /* Build configuration list for PBXNativeTarget "pickleTests" */;
 			buildPhases = (
+				8E08DA65BC43CAD7E571C351 /* [CP] Check Pods Manifest.lock */,
 				5C53AFA92AFE62220091796D /* Sources */,
 				5C53AFAA2AFE62220091796D /* Frameworks */,
 				5C53AFAB2AFE62220091796D /* Resources */,
@@ -269,9 +324,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C53AFC72AFE62220091796D /* Build configuration list for PBXNativeTarget "pickleUITests" */;
 			buildPhases = (
+				188184D1B16DF7AF17C263DA /* [CP] Check Pods Manifest.lock */,
 				5C53AFB32AFE62220091796D /* Sources */,
 				5C53AFB42AFE62220091796D /* Frameworks */,
 				5C53AFB52AFE62220091796D /* Resources */,
+				1A7F474FEE355B85CDBAD89C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +374,7 @@
 			mainGroup = 5C53AF8F2AFE62210091796D;
 			packageReferences = (
 				5CE593562AFFFDEB001FF9D6 /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
+				5C560FF42B1111F60016AA05 /* XCRemoteSwiftPackageReference "Aespa" */,
 			);
 			productRefGroup = 5C53AF992AFE62210091796D /* Products */;
 			projectDirPath = "";
@@ -355,24 +413,130 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		188184D1B16DF7AF17C263DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pickle-pickleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A7F474FEE355B85CDBAD89C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pickle-pickleUITests/Pods-pickle-pickleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pickle-pickleUITests/Pods-pickle-pickleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pickle-pickleUITests/Pods-pickle-pickleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E08DA65BC43CAD7E571C351 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pickleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF7E3CD933406DE887B440E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pickle/Pods-pickle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pickle/Pods-pickle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pickle/Pods-pickle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E86774FAD0868CC74B7DAF2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pickle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C53AF942AFE62210091796D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5C53AFA52AFE62220091796D /* Persistence.swift in Sources */,
+				5CB36ED22B10A96F003DF8B7 /* SwifyCamViewController.swift in Sources */,
 				5C54CEE32B0BFBE90022A03B /* DailyEntry.swift in Sources */,
 				5C5B575C2B027B4A008F29F8 /* VideoCardView.swift in Sources */,
+				5C54CEE52B0E2D4C0022A03B /* ImageSaver.swift in Sources */,
 				5C53AFCB2AFE8B720091796D /* CameraViewController.swift in Sources */,
 				5CE5935C2B000989001FF9D6 /* CalendarView.swift in Sources */,
 				5C05CD5F2B01429E005BBF9E /* EntryRow.swift in Sources */,
 				5C53AF9E2AFE62210091796D /* ContentView.swift in Sources */,
+				5C560FF82B1114260016AA05 /* VideoContentViewModel.swift in Sources */,
 				5C53AFCF2AFEA9480091796D /* CameraView.swift in Sources */,
 				5CC0AB9E2B0657D1008D979A /* LocalFileManager.swift in Sources */,
 				5C05CD622B0142E5005BBF9E /* EntryItem.swift in Sources */,
 				5CC0AB9B2B065523008D979A /* EntrySummaryViewModel.swift in Sources */,
+				5C560FFA2B1115F10016AA05 /* VideoContentView.swift in Sources */,
 				5C05CD5C2B013B3D005BBF9E /* EntryListView.swift in Sources */,
-				5C5B575E2B03BED8008F29F8 /* VideoRecorderViewController.swift in Sources */,
 				5C5B575A2B023CA1008F29F8 /* EntrySummaryView.swift in Sources */,
 				5C53AF9C2AFE62210091796D /* pickleApp.swift in Sources */,
 				5C53AFA82AFE62220091796D /* pickle.xcdatamodeld in Sources */,
@@ -450,7 +614,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -513,7 +677,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -534,6 +698,7 @@
 		};
 		5C53AFC22AFE62220091796D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED780ADF71E9A289D526308F /* Pods-pickle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -546,7 +711,8 @@
 				INFOPLIST_FILE = pickle/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Pickle to use camera? This app only saves data internally.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow Pickle to use microphone? This app only saves data internally.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow Pickle to access microphone?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow Pickle to access Photos Library?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -567,6 +733,7 @@
 		};
 		5C53AFC32AFE62220091796D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEABAECB16FCD93CC2FDD18C /* Pods-pickle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -579,7 +746,8 @@
 				INFOPLIST_FILE = pickle/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Pickle to use camera? This app only saves data internally.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow Pickle to use microphone? This app only saves data internally.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow Pickle to access microphone?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow Pickle to access Photos Library?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -600,6 +768,7 @@
 		};
 		5C53AFC52AFE62220091796D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A2BD5E86867A45545E0F74 /* Pods-pickleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -620,6 +789,7 @@
 		};
 		5C53AFC62AFE62220091796D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2608BED96910184A8C121F /* Pods-pickleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -640,6 +810,7 @@
 		};
 		5C53AFC82AFE62220091796D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C27D64C852CB7ED2B0BA5F13 /* Pods-pickle-pickleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -658,6 +829,7 @@
 		};
 		5C53AFC92AFE62220091796D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE09CB7B61621456A32CB69E /* Pods-pickle-pickleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -716,6 +888,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5C560FF42B1111F60016AA05 /* XCRemoteSwiftPackageReference "Aespa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/enebin/Aespa.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
 		5CE593562AFFFDEB001FF9D6 /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/HorizonCalendar";
@@ -727,6 +907,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5C560FF52B1111F60016AA05 /* Aespa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C560FF42B1111F60016AA05 /* XCRemoteSwiftPackageReference "Aespa" */;
+			productName = Aespa;
+		};
 		5CE593572AFFFDEB001FF9D6 /* HorizonCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5CE593562AFFFDEB001FF9D6 /* XCRemoteSwiftPackageReference "HorizonCalendar" */;

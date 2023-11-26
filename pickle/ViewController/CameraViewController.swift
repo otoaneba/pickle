@@ -10,14 +10,18 @@ import UIKit
 import SwiftUI
 import MobileCoreServices
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCaptureFileOutputRecordingDelegate {
+    func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
+        
+    }
+    
     
     // Capture Session
-    var session: AVCaptureSession?
+    var session: AVCaptureSession!
     // Photo Output
     let output: AVCapturePhotoOutput = AVCapturePhotoOutput()
     // Video Preview for the camera feed
-    let previewLayer = AVCaptureVideoPreviewLayer()
+    var previewLayer = AVCaptureVideoPreviewLayer()
     // Define video output
     var movieOutput = AVCaptureMovieFileOutput()
     // File manager
@@ -35,23 +39,32 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
         return button
     }()
     
-    private let switchCameraButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        var config = UIButton.Configuration.filled()
-        config.image = UIImage(systemName: "arrow.triangle.2.circlepath.camera.fill")
-        button.layer.borderWidth = 10
-        button.layer.borderColor = UIColor.white.cgColor
-        button.configuration = config
+    //MARK:- View Components
+    let switchCameraButton : UIButton = {
+        let button = UIButton()
+        let image = UIImage(named: "switchcamera")?.withRenderingMode(.alwaysTemplate)
+        button.setImage(image, for: .normal)
+        button.tintColor = .white
+        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    let vc = UIImagePickerController()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        view.layer.addSublayer(previewLayer)
-        view.addSubview(shutterButton)
+        vc.sourceType = .camera
+        vc.allowsEditing = true
+        vc.delegate = self
+        
+        present(vc, animated: true)
+//        view.layer.addSublayer(previewLayer)
+//        view.addSubview(shutterButton)
 //        view.addSubview(switchCameraButton)
         checkCameraPermissions()
+        
 
         shutterButton.addTarget(self, action: #selector(didTapTakePhoto), for: .touchUpInside)
 //        switchCameraButton.addTarget(self, action: #selector(didTapTakePhoto), for: .touchUpInside)
@@ -104,6 +117,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
     }
     
     private func setUpCamera() {
+    
         let session = AVCaptureSession()
         if let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) {
             print(device)
@@ -127,6 +141,33 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
                 print("error: ", error)
             }
         }
+    }
+    
+    private func setUpAndStartCaptureSession() {
+        DispatchQueue.global(qos: .userInitiated).async{
+            self.session = AVCaptureSession()
+            self.session.beginConfiguration()
+            
+            if (self.session.canSetSessionPreset(.hd1920x1080)) {
+                self.session.sessionPreset = .hd1920x1080
+            }
+            
+            self.session.automaticallyConfiguresCaptureDeviceForWideColor = true
+            
+            DispatchQueue.main.async {
+                //setup preview layer
+                self.setupPreviewLayer()
+            }
+            
+            self.session.commitConfiguration()
+            self.session.startRunning()
+        }
+    }
+    
+    func setupPreviewLayer(){
+        previewLayer = AVCaptureVideoPreviewLayer(session: session)
+        view.layer.insertSublayer(previewLayer, below: switchCameraButton.layer)
+        previewLayer.frame = self.view.layer.frame
     }
     
     func saveImage(image: UIImage, name: String) {
@@ -156,6 +197,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
     
     @objc private func didTapTakePhoto() {
         print("didTapTakePhoto: \(output)")
+        
         output.capturePhoto(with: AVCapturePhotoSettings()
                             , delegate: self)
     }
@@ -165,7 +207,37 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
         let vc = UIHostingController(rootView: EntrySummaryView(entry: entry))
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    func switchCamera() {
+    
+    //MARK:- Actions
+    @objc func captureImage(_ sender: UIButton?){
+        
+    }
+    
+    @objc func switchCamera(_ sender: UIButton?){
+        
+    }
+    
+    func chooseCamera(_ sender: Any) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .camera
+        self.present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+
+        guard let image = info[.editedImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+
+        // print out the image size as a test
+        print(image.size)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -185,6 +257,9 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate {
         guard let imagePath = saveImageStatus?.url else { return }
         goToEntrySummary(path: imagePath)
         
+        let imageSaver = ImageSaver()
+        imageSaver.writeToPhotoAlbum(image: image)
+        
 //        saveImage(image: image, name: "test")
        
 //        let imageView = UIImageView(image: image)
@@ -192,4 +267,6 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate {
 //        imageView.frame = view.bounds
 //        view.addSubview(imageView)
     }
+    
+    
 }
