@@ -50,7 +50,7 @@ class VideoContentViewModel: ObservableObject {
             }
             .assign(to: \.videoAlbumCover, on: self)
             .store(in: &subscription)
-
+        
         // Other settings...
     }
     
@@ -60,6 +60,23 @@ class VideoContentViewModel: ObservableObject {
             let fetchedFiles = await aespaSession.fetchVideoFiles()
             DispatchQueue.main.async { self.videoFiles = fetchedFiles }
         }
+    }
+    
+    func getVidePath() {
+        aespaSession.stopRecording { result in
+            switch result {
+            case .success(let file):
+                print("recording ended. printing path")
+                print(file.path ?? "path") // file://some/path
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+
+    @objc func goToEntrySummary(path: URL) {
+        let entry = EntryItem(id: UUID(), title: "", date: .now, status: "", duration: .seconds(59), location: "Kyoyo, Japan", comment: "T", entryType: "video", imageUrl: path)
+        let vc = UIHostingController(rootView: EntrySummaryView(entry: entry))
     }
 }
 

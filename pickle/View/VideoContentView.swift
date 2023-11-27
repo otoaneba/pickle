@@ -95,7 +95,7 @@ struct VideoContentView: View {
                         switch captureMode {
                         case .video:
                             if isRecording {
-                                viewModel.aespaSession.stopRecording()
+                                viewModel.getVidePath()
                                 isRecording = false
                             } else {
                                 viewModel.aespaSession.startRecording()
