@@ -19,7 +19,7 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack() {
                 MyCalendarView()
                 Spacer()
@@ -27,24 +27,17 @@ struct ContentView: View {
                     Image(systemName: "video.fill")
                         .renderingMode(.original)
                 }
-                .navigationBarTitle("")
-                .navigationBarHidden(true)
+                .navigationBarTitle("Pickle")
             }
-            .padding(.vertical, 100)
             Spacer()
-        
-            
         }
         
     }
-    private func openMic() {
-        selection = "mic"
-    }
-    
+
     private func openCamera() {
         selection = "camera"
     }
-    
+
 
     private func addItem() {
         withAnimation {
