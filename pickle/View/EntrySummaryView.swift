@@ -8,24 +8,29 @@
 import SwiftUI
 
 struct EntrySummaryView: View {
-    var entry: EntryItem
-    let vm: EntrySummaryViewModel = EntrySummaryViewModel()
+    @Environment(\.colorScheme) var colorScheme
     @State private var notes = ""
     @State private var saveButtonPressed: Bool = false
+    var entry: EntryItem
+    let vm: EntrySummaryViewModel = EntrySummaryViewModel()
 
     var body: some View {
         NavigationStack {
-            VStack {
+            VStack(alignment: .leading) {
                 VideoCardView(url: entry.getImageUrl())
                     .padding()
-                        LabeledContent("Date", value: "\(entry.date.formatted(date: .numeric, time: .omitted))")
-                        LabeledContent("Location", value: "\(entry.location)")
-                        Label("Notes", systemImage: "list.clipboard.fill")
-                        TextEditor(text: $notes)
-                            .frame(height: 350)
-                            .cornerRadius(10)
-                            .border(.white)
-                NavigationLink("Save 2") {
+                LabeledContent("Date", value: "\(entry.date.formatted(date: .numeric, time: .omitted))")
+                LabeledContent("Location", value: "\(entry.location)")
+                Label("Notes", systemImage: "list.clipboard.fill")
+                    .padding(.top)
+                TextEditor(text: $notes)
+                    .frame(height: 350)
+                    .cornerRadius(20) /// make the background rounded
+                    .overlay( /// apply a rounded border
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(colorScheme == .dark ? .white : .gray, lineWidth: 1)
+                        )
+                NavigationLink("Save") {
                     ContentView()
                 }.simultaneousGesture(TapGesture().onEnded {
                     print("save information here")
@@ -37,7 +42,7 @@ struct EntrySummaryView: View {
                     .cornerRadius(10)
                 Spacer()
             }
-
+            .padding(.horizontal)
         }
 
     }

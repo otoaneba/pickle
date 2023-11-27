@@ -22,6 +22,7 @@ struct ContentView: View {
         NavigationStack {
             VStack() {
                 MyCalendarView()
+                    .padding(.bottom, 360)
                 Spacer()
                 NavigationLink(destination: VideoContentView()) {
                     Image(systemName: "video.fill")
@@ -29,9 +30,7 @@ struct ContentView: View {
                 }
                 .navigationBarTitle("Pickle")
             }
-            Spacer()
         }
-        
     }
 
     private func openCamera() {
