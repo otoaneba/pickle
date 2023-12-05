@@ -16,9 +16,13 @@ class VideoContentViewModel: ObservableObject {
         aespaSession.interactivePreview()
     }
     private var subscription = Set<AnyCancellable>()
-    
+    private var entryImage: UIImage?
     @Published var videoAlbumCover: Image?
     @Published var videoFiles: [VideoAsset] = []
+    @Published var entrytest: EntryItem?
+    @Published var pathExists: Bool = false
+    @Published var videoPath: URL?
+    
     
     init() {
         let option = AespaOption(albumName: "Aespa-Demo")
@@ -43,6 +47,7 @@ class VideoContentViewModel: ObservableObject {
             .receive(on: DispatchQueue.main)
             .map { result -> Image? in
                 if case .success(let file) = result {
+                    
                     return file.thumbnailImage
                 } else {
                     return nil
@@ -62,20 +67,33 @@ class VideoContentViewModel: ObservableObject {
         }
     }
     
-    func getVidePath() {
+    func stopRecordingSession() {
         aespaSession.stopRecording { result in
             switch result {
             case .success(let file):
                 print("recording ended. printing path")
                 print(file.path ?? "path") // file://some/path
+                DispatchQueue.main.async {
+                    if let path = file.path {
+                        self.videoPath = path
+                        self.pathExists = true
+                        self.entrytest = EntryItem(id: UUID(), title: "Untitled", date: .now, status: "", duration: .zero, location: "Sweden", comment: "comment", entryType: "video", imageUrl: path)
+                    }
+                }
             case .failure(let error):
                 print(error)
             }
         }
     }
+    
+    func saveEntry() {
+        videoPath = nil
+        pathExists = false
+    }
 
     @objc func goToEntrySummary(path: URL) {
         let entry = EntryItem(id: UUID(), title: "", date: .now, status: "", duration: .seconds(59), location: "Kyoyo, Japan", comment: "T", entryType: "video", imageUrl: path)
+        print("going to entry summary view")
         let vc = UIHostingController(rootView: EntrySummaryView(entry: entry))
     }
 }

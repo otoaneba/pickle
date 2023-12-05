@@ -11,38 +11,51 @@ struct EntrySummaryView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var notes = ""
     @State private var saveButtonPressed: Bool = false
+    @FocusState var isInputActive: Bool
     var entry: EntryItem
     let vm: EntrySummaryViewModel = EntrySummaryViewModel()
 
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading) {
-                VideoCardView(url: entry.getImageUrl())
-                    .padding()
-                LabeledContent("Date", value: "\(entry.date.formatted(date: .numeric, time: .omitted))")
-                LabeledContent("Location", value: "\(entry.location)")
-                Label("Notes", systemImage: "list.clipboard.fill")
-                    .padding(.top)
-                TextEditor(text: $notes)
-                    .frame(height: 350)
-                    .cornerRadius(20) /// make the background rounded
-                    .overlay( /// apply a rounded border
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(colorScheme == .dark ? .white : .gray, lineWidth: 1)
+            Form {
+                VStack(alignment: .leading) {
+                    VideoCardView(url: entry.getImageUrl())
+                        .padding()
+                    LabeledContent("Date", value: "\(entry.date.formatted(date: .numeric, time: .omitted))")
+                    LabeledContent("Location", value: "\(entry.location)")
+                    Label("Notes", systemImage: "list.clipboard.fill")
+                        .padding(.top)
+                    TextEditor(text: $notes)
+                        .focused($isInputActive)
+                        .toolbar {
+                            //ToolbarItem(placement: .keyboard) {
+                            if isInputActive {
+                                Button("Done") {
+                                    isInputActive = false
+                                }
+                            }
+                           // }
+                        }
+                        .frame(height: 350)
+                        .cornerRadius(5) /// make the background rounded
+                        .overlay( /// apply a rounded border
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(colorScheme == .dark ? .white : .gray, lineWidth: 1)
                         )
-                NavigationLink("Save") {
-                    ContentView()
-                }.simultaneousGesture(TapGesture().onEnded {
-                    print("save information here")
-                    
-                }).foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                Spacer()
+                    NavigationLink("Save") {
+                        ContentView()
+                    }.simultaneousGesture(TapGesture().onEnded {
+                        print("save information here")
+                        
+                    }).foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                    Spacer()
+                }
             }
-            .padding(.horizontal)
+//            .padding(.horizontal)
         }
 
     }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VideoCardView: View {
     let url: URL?
+
     
     var body: some View {
         ZStack{
